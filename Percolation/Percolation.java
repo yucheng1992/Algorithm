@@ -3,9 +3,6 @@ public class Percolation {
     private int n;
     private boolean[] state;
     public Percolation(int N) {
-        if (n <= 0) {
-            throw new IllegalArgumentException();
-        }
         n = N;
         grid = new WeightedQuickUnionUF(N*N+2);
         state = new boolean[n*n+2];
